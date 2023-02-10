@@ -1,0 +1,286 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #a52a2a;
+    padding: 40px 0;
+}
+
+.caixa{
+    position: relative;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 20px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #FFEC5F;
+    text-decoration-line: underline;
+}
+
+.produtos {
+    width: 1500px;
+    margin: 0 auto;
+    padding-top: 40px;
+    margin-bottom: 40px;
+}
+
+.produtos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    padding: 50px 0;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: #FFEC5F;
+}
+.produtos li:active{
+    border-color: darkgoldenrod;
+}
+.produtos li:hover h2{
+    font-size: 34px;
+}
+
+.produtos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao{
+    font-size: 18px;
+}
+
+.preço {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer{
+    text-align: center;
+    background: rgb(56, 56, 56);
+    padding: 40px 0;
+}
+
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+#logodebaixo{
+    width: 150px;
+}
+
+.contatos-main{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 30%;
+}
+
+.checkbox{
+    margin: 20px 0 ;
+}
+
+.enviar{
+    width: 25%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: darkorange;
+    transform: scale(1.010);
+}
+
+table{
+    margin: 20px 0 40px;
+
+}
+
+thead{
+    background: rgb(70, 70, 70);
+    color: white;
+    font-weight: bold;
+}
+
+td, th{
+    border: 1px solid black;
+    padding: 8px 15px;
+}
+
+/* css da pagina inicial*/
+
+.titulo-principal{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    margin-top: 20px;
+}
+
+.titulo-principal:before{
+    content: "[ ";
+}
+.titulo-principal:after{
+    content: " ]";
+}
+
+.beneficios > .titulo-principal{
+    font-weight: bold;
+}
+
+.principal{
+    padding: 3em 0;
+    background: #FEFEFE;
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.principal p{
+    margin: 0 0 1em;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.mapa-conteudo{
+    width: 1500px;
+    margin: 0 auto;
+}
+
+.mapa{
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE,#888888);
+}
+
+.mapa p{
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background: #888888;
+}
+
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+
+.lista-beneficios{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.itens{
+    line-height: 1.5;
+}
+
+.itens:before{
+    content:"🟊";
+}
+
+.itens:first-child{
+    font-weight: bold;
+}
+
+.imagem-beneficios{
+    width: 60%;
+    opacity: 1;
+    transition: 400ms;
+             /* X     Y   blur  cor inset=sombra interna    30px=espaçamento*/
+    box-shadow: 10px 10px 10px black; 
+}
+
+.imagem-beneficios:hover{
+    opacity: .3;
+}
+
+.caillou{
+    width: 130px;
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+@media screen and (max-width:480px){
+    .caixa,.principal,.conteudo-beneficios,.mapa-conteudo,.video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+    .produtos li {
+        display: block;
+        width: 20%;
+    }
+
+}
