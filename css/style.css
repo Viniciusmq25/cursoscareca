@@ -284,3 +284,36 @@ td, th{
     }
 
 }
+
+@media screen and (max-width:1440px){
+    .caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+    .produtos li {
+        display: block;
+        width: 80%;
+    }
+
+    .produtos{
+        width: auto;
+    }
+
+    .contatos-main{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
+
